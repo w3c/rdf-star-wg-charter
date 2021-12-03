@@ -101,7 +101,7 @@
     Feel free to raise <a href="https://github.com/w3c/rdf-star-wg-charter/issues">issues</a>.
           </p>
 
-      <section id="details">
+      <div id="details">
         <table class="summary-table">
           <tr id="Duration">
             <th>
@@ -146,7 +146,7 @@
             </td>
           </tr>
         </table>
-      </section>
+      </div>
 
       <section id="background" class="background issue">
         <p>RDF-star (initially spelled RDF*) is an extension of RDF that was initially proposed by Olaf Hartig and Bryan Thompson in 2014, providing a concise way to make statements about statements.It has become quite popular, especially as a mean to provide interoperability between RDF and Property Graphs, and has been already implemented to various extent by <a href="https://w3c.github.io/rdf-star/implementations.html">a number of vendors and open-source libraries</a>. A <a href="https://w3c.github.io/rdf-star/">subgroup</a> of the <a href="https://www.w3.org/community/rdf-dev/">RDF-DEV Community Group</a> then formed to gather feedback, <a href="https://w3c.github.io/rdf-star/UCR/rdf-star-ucr.html">use-cases</a>, and explore the possibility of <a href="https://w3c.github.io/rdf-star/cg-spec/editors_draft.html">integrating RDF-star</a> into the existing RDF standards.</p>
@@ -185,7 +185,9 @@
           <p>
             The Working Group will deliver the following W3C normative specifications:
           </p>
-          <dl>
+          <section>
+            <h4>RDF family of specifications</h4>
+            <dl>
             <dt id="rdf11-concepts" class="spec">RDF <span class="issue">1.2</span> Concepts and Abstract Syntax</dt>
             <dd>
               <p>This specification defines an abstract syntax (a data model) which serves to link all RDF-based languages and specifications. The abstract syntax has two key data structures: RDF graphs are sets of subject-predicate-object triples, where the elements may be IRIs, blank nodes, or datatyped literals. They are used to express descriptions of resources. RDF datasets are used to organize collections of RDF graphs, and comprise a default graph and zero or more named graphs. RDF 1.1 Concepts and Abstract Syntax also introduces key concepts and terminology, and discusses datatyping and the handling of fragment identifiers in IRIs within RDF graphs.</p>
@@ -193,36 +195,6 @@
               <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
               <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">RDF 1.1 Concepts and Abstract Syntax</a>, eds. Richard Cyganiak, David Wood, Markus Lanthaler, W3C Recommendation.</p>
               <p class="draft-status"><b>Reference:</b> <a href="https://w3c.github.io/rdf-star/cg-spec/#concepts"><i class="todo">Section 2</i> of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Draft Community Group Report, 2020. </p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
-            </dd>
-
-            <dt id="turtle" class="spec">RDF <span class="issue">1.2</span> Turtle</dt>
-            <dd>
-              <p>This specification defines a textual syntax for RDF called Turtle that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. Turtle provides levels of compatibility with the N-Triples format as well as the triple pattern syntax of the SPARQL W3C Recommendation.</p>
-
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-turtle-20140225/">RDF 1.1 Turtle</a>, eds. Eric Prud'hommeaux, Gavin Carothers, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://w3c.github.io/rdf-star/cg-spec/#turtle-star"><i class="todo">Section 3.1</i> of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Draft Community Group Report, 2020. </p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
-            </dd>
-
-            <dt id="trig" class="spec">RDF <span class="issue">1.2</span> TriG</dt>
-            <dd>
-              <p>This specification defines a textual syntax for RDF called TriG that allows an RDF dataset to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. TriG is an extension of the Turtle format.</p>
-
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-trig-20140225/">RDF 1.1 TriG</a>, eds. Gavin Carothers, Andy Seaborne, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://w3c.github.io/rdf-star/cg-spec/#trig-star"><i class="todo">Section 3.2</i> of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Draft Community Group Report, 2020. </p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
-            </dd>
-
-            <dt id="n-triples" class="spec">RDF <span class="issue">1.2</span> N-Triples</dt>
-            <dd>
-              <p>This specification defines a line-based, plain text format for encoding an RDF graph.</p>
-
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-n-triples-20140225/">RDF 1.1 N-Triples</a>, eds. Gavin Carothers, Andy Seaborne, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://w3c.github.io/rdf-star/cg-spec/#n-triples-star"><i class="todo">Section 3.3</i> of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Draft Community Group Report, 2020. </p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
             </dd>
 
@@ -236,12 +208,13 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
             </dd>
 
-            <dt id="rdf-syntax-grammar" class="spec">RDF <span class="issue">1.2</span> XML Syntax</dt>
+            <dt id="n-triples" class="spec">RDF <span class="issue">1.2</span> N-Triples</dt>
             <dd>
-              <p>This specification defines an XML syntax for RDF called RDF/XML in terms of Namespaces in XML, the XML Information Set and XML Base.</p>
+              <p>This specification defines a line-based, plain text format for encoding an RDF graph.</p>
 
               <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-rdf-syntax-grammar-20140225/">RDF 1.1 XML Syntax</a>, eds. Fabien Gandon, Guus Schreiber, W3C Recommendation.</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-n-triples-20140225/">RDF 1.1 N-Triples</a>, eds. Gavin Carothers, Andy Seaborne, W3C Recommendation.</p>
+              <p class="draft-status"><b>Reference:</b> <a href="https://w3c.github.io/rdf-star/cg-spec/#n-triples-star"><i class="todo">Section 3.3</i> of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Draft Community Group Report, 2020. </p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
             </dd>
 
@@ -255,16 +228,49 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
             </dd>
 
+            <dt id="trig" class="spec">RDF <span class="issue">1.2</span> TriG</dt>
+            <dd>
+              <p>This specification defines a textual syntax for RDF called TriG that allows an RDF dataset to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. TriG is an extension of the Turtle format.</p>
+
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-trig-20140225/">RDF 1.1 TriG</a>, eds. Gavin Carothers, Andy Seaborne, W3C Recommendation.</p>
+              <p class="draft-status"><b>Reference:</b> <a href="https://w3c.github.io/rdf-star/cg-spec/#trig-star"><i class="todo">Section 3.2</i> of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Draft Community Group Report, 2020. </p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+            </dd>
+
+            <dt id="turtle" class="spec">RDF <span class="issue">1.2</span> Turtle</dt>
+            <dd>
+              <p>This specification defines a textual syntax for RDF called Turtle that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. Turtle provides levels of compatibility with the N-Triples format as well as the triple pattern syntax of the SPARQL W3C Recommendation.</p>
+
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-turtle-20140225/">RDF 1.1 Turtle</a>, eds. Eric Prud'hommeaux, Gavin Carothers, W3C Recommendation.</p>
+              <p class="draft-status"><b>Reference:</b> <a href="https://w3c.github.io/rdf-star/cg-spec/#turtle-star"><i class="todo">Section 3.1</i> of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Draft Community Group Report, 2020. </p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+            </dd>
+
+            <dt id="rdf-syntax-grammar" class="spec">RDF <span class="issue">1.2</span> XML Syntax</dt>
+            <dd>
+              <p>This specification defines an XML syntax for RDF called RDF/XML in terms of Namespaces in XML, the XML Information Set and XML Base.</p>
+
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-rdf-syntax-grammar-20140225/">RDF 1.1 XML Syntax</a>, eds. Fabien Gandon, Guus Schreiber, W3C Recommendation.</p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+            </dd>
+
             <dt id="rdf-schema" class="spec">RDF Schema <span class="issue">1.2</span></dt>
             <dd>
-              <p>This specification defines a data-modelling vocabulary for RDF data. RDF Schema is an extension of the basic RDF vocabulary.</p>
+              <p>This specification describes how to use RDF to describe RDF vocabularies. This specification defines a vocabulary for this purpose and defines other built-in RDF vocabulary initially specified in the RDF Model and Syntax Specification.</p>
 
               <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
               <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-rdf-schema-20140225/">RDF Schema 1.1</a>, eds. Dan Brickley, R.V. Guha, W3C Recommendation.</p>
               <p class="draft-status"><b>Reference:</b> <a href="https://w3c.github.io/rdf-star/cg-spec/#rdf-star-vocabulary"><i class="todo">Section 7</i> of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Draft Community Group Report, 2020. </p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
             </dd>
-
+            </dl>
+          </section>
+          <section>
+            <h4>SPARQL family of specifications</h4>
+            <dl>
             <dt id="sparql11-query" class="spec">SPARQL <span class="issue">1.2</span> Query Language</dt>
             <dd>
               <p>This specification defines the syntax and semantics of the SPARQL query language for RDF. SPARQL can be used to express queries across diverse data sources, whether the data is stored natively as RDF or viewed as RDF via middleware. SPARQL contains capabilities for querying required and optional graph patterns along with their conjunctions and disjunctions. SPARQL also supports aggregation, subqueries, negation, creating values by expressions, extensible value testing, and constraining queries by source RDF graph. The results of SPARQL queries can be result sets or RDF graphs.</p>
@@ -305,6 +311,7 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
             </dd>
           </dl>
+        </section>
 
         </section>
 
