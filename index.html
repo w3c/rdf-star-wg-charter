@@ -272,6 +272,20 @@
           <section>
             <h4>SPARQL family of specifications</h4>
             <dl>
+<dt id="sparql11-overview" class="spec">SPARQL <span class="issue">1.2</span> Overview</dt>
+            <dd>
+	            <p>
+                This document is an overview of SPARQL 1.1. It provides an introduction
+                to a set of W3C specifications that facilitate querying and manipulating
+                RDF graph content on the Web or in an RDF store.
+              </p>
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/">SPARQL 1.1 Overview</a>, ed. The W3C SPARQL Working
+Group.</p>
+              <p class="draft-status"><b>Reference:</b> <i>none</i></p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+              </dd>
+
             <dt id="sparql11-query" class="spec">SPARQL <span class="issue">1.2</span> Query Language</dt>
             <dd>
               <p>This specification defines the syntax and semantics of the SPARQL query language for RDF. SPARQL can be used to express queries across diverse data sources, whether the data is stored natively as RDF or viewed as RDF via middleware. SPARQL contains capabilities for querying required and optional graph patterns along with their conjunctions and disjunctions. SPARQL also supports aggregation, subqueries, negation, creating values by expressions, extensible value testing, and constraining queries by source RDF graph. The results of SPARQL queries can be result sets or RDF graphs.</p>
@@ -312,6 +326,63 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
             </dd>
           </dl>
+
+          <p>
+            The following additional SPARQL documents will be updated to align with changes
+            caused by the documents listed above and to incorporate errata.
+          </p>
+
+          <dl>
+            <dt id="sparql11-service-description" class="spec">SPARQL <span class="issue">1.2</span> Service Description</dt>
+            <dd>
+              <p>This document describes SPARQL service description, a method for discovering, and vocabulary for describing SPARQL services made available via the SPARQL 1.1 Protocol for RDF.</p>
+
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-service-description-20130321/">SPARQL 1.1  Service Description</a>, ed. Gregory Todd Williams, W3C Recommendation.</p>
+              <p class="draft-status"><b>Reference:</b> <i>none</i></p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+            </dd>
+
+            <dt id="sparql11-federated-query" class="spec">SPARQL <span class="issue">1.2</span>  Federated Query</dt>
+            <dd>
+              <p>This specification defines the syntax and semantics of SPARQL 1.1 Federated Query for executing queries distributed over different SPARQL endpoints.</p>
+
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-federated-query-20130321/">SPARQL 1.1 Federated Query</a>, eds. Eric Prud'hommeaux, Carlos Buil-Aranda, W3C Recommendation.</p>
+              <p class="draft-status"><b>Reference:</b> <i>none</i></p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+            </dd>
+
+            <dt id="sparql11-entailment-regimes" class="spec">SPARQL <span class="issue">1.2</span> Entailment Regimes</dt>
+            <dd>
+              <p>There are different possible ways of defining a basic graph pattern matching extension for an entailment relation. This document specifies one such way for a range of standard semantic web entailment relations.</p>
+
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-entailment-20130321/">SPARQL 1.1 Entailment Regimes</a>, eds. Birte Glimm, Chimezie Ogbuji, W3C Recommendation.</p>
+              <p class="draft-status"><b>Reference:</b> <i>none</i></p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+            </dd>
+
+           <dt id="sparql-11-protocol" class="spec">SPARQL <span class="issue">1.2</span> Protocol</dt>
+            <dd>
+              <p>This document specifies the SPARQL Protocol; it describes a means for conveying SPARQL queries and updates to a SPARQL processing service and returning the results via HTTP to the entity that requested them.</p>
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/">SPARQL 1.1 Protocol</a>, eds.  Lee Feigenbaum, Gregory Todd Williams, Kendall Grant Clark (1st edition), Elias Torres (1str edition), W3C Recommendation.</p>
+              <p class="draft-status"><b>Reference:</b> <i>none</i></p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+            </dd>
+
+           <dt id="sparql11-graph-store-http-protocol" class="spec">SPARQL <span class="issue">1.2</span> Graph Store HTTP Protocol</dt>
+            <dd>
+              <p>This document describes the use of HTTP operations for the purpose of managing a collection of RDF graphs.</p>
+
+              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
+              <p><b>Adopted Draft:</b> <a href="http://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321/">SPARQL 1.1  Graph Store HTTP Protocol</a>, ed. Chimezie Ogbuji, W3C Recommendation.</p>
+              <p class="draft-status"><b>Reference:</b> <i>none</i></p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + X months</i></p>
+            </dd>
+          </dl>
+
         </section>
 
         </section>
