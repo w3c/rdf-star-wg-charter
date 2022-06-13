@@ -34,12 +34,10 @@
         font-weight: normal;
       }
 
-      /*
       .issue {
         background: plum;
         font-style: italic;
       }
-      */
 
       .todo {
         color: #900;
@@ -86,12 +84,14 @@
       <div style="border: 1px solid darkred">
         <p><strong>DRAFT</strong></p>
         <p>This is a <em>draft</em> text, under development by the community. The goal is to, eventually, submit this draft charter proposal to an official W3C AC review.</p>
+        <!--
         <p>Any text rendered like <span class=issue>this</span> refers to content that must be finalized before the charter is sent to AC review.</p>
+        -->
         <p>Any text rendered like <span class=todo>this</span> refers to content that must be updated when the final charter is published at the latest (e.g., adjusting hyperlinks).</p>
       </div>
 
 
-      <p class="mission">The <strong>mission</strong> of the <a href=""><i>RDF-star</i> Working Group</a> is to <span class="issue">extend a set of RDF and SPARQL related recommendations, with the ability to concisely represent and query statements about statements.</span></p>
+      <p class="mission">The <strong>mission</strong> of the <a href=""><i>RDF-star</i> Working Group</a> is to <span>extend a set of RDF and SPARQL related recommendations, with the ability to concisely represent and query statements about statements.</span></p>
 
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/XXXTODOXXX/join">Join the <i>RDF-star</i> Working Group.</a></p>
@@ -156,11 +156,11 @@
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p class="issue">The scope of this Working Group is to extend the recommendations defining RDF 1.1 and SPARQL 1.1 with the features introduced by RDF-star. More precisely, RDF-star introduces the notion of <em>quoted triple</em> to express statements about statements. The abstract and concrete syntaxes of RDF and SPARQL are extended to support this new feature, as well as their respective semantics.</p>
+        <p>The scope of this Working Group is to extend the recommendations defining RDF 1.1 and SPARQL 1.1 with the features introduced by RDF-star. More precisely, RDF-star introduces the notion of <em>quoted triple</em> to express statements about statements. The abstract and concrete syntaxes of RDF and SPARQL are extended to support this new feature, as well as their respective semantics.</p>
 
-        <p class="issue">The community group has identified, in its <a href="https://www.w3.org/2021/12/rdf-star.html">final report</a>, which recommendations should be updated, and a possible path for updating them. The Working Group may however reconsider this and proceed differently from the Community Group's proposal. For every recommendation updated by this Working Group, the pending editorial errata will also be addressed. The Working Group will also consider <a href="https://www.w3.org/2021/Process-20211102/#allow-new-features">allowing new features</a> in these recommendations, according to <a href="https://www.w3.org/2021/Process-20211102/#revised-rec-features">Section 6.3.11.4 of the W3C process</a>, in order to render future evolutions easier.</p>
+        <p>The community group has identified, in its <a href="https://www.w3.org/2021/12/rdf-star.html">final report</a>, which recommendations should be updated, and a possible path for updating them. The Working Group may however reconsider this and proceed differently from the Community Group's proposal. For every recommendation updated by this Working Group, the pending editorial errata will also be addressed. The Working Group will also consider <a href="https://www.w3.org/2021/Process-20211102/#allow-new-features">allowing new features</a> in these recommendations, according to <a href="https://www.w3.org/2021/Process-20211102/#revised-rec-features">Section 6.3.11.4 of the W3C process</a>, in order to render future evolutions easier.</p>
 
-        <p class="issue">The group SHOULD ensure that any RDF 1.1 data remains valid in this new version. Furthermore, any RDF or RDFS entailment drawn under RDF 1.1 semantics SHOULD also remain valid in this new version.</p>
+        <p>The group SHOULD ensure that any RDF 1.1 data remains valid in this new version. Furthermore, any RDF or RDFS entailment drawn under RDF 1.1 semantics SHOULD also remain valid in this new version.</p>
 
 
         <section id="section-out-of-scope">
@@ -195,7 +195,7 @@
           <section>
             <h4>RDF family of specifications</h4>
             <dl>
-            <dt id="rdf11-concepts" class="spec">RDF <span class="issue">1.2</span> Concepts and Abstract Syntax</dt>
+            <dt id="rdf11-concepts" class="spec">RDF 1.2 Concepts and Abstract Syntax</dt>
             <dd>
               <p>This specification defines an abstract syntax (a data model) which serves to link all RDF-based languages and specifications. The abstract syntax has two key data structures: RDF graphs are sets of subject-predicate-object triples, where the elements may be IRIs, blank nodes, or datatyped literals. They are used to express descriptions of resources. RDF datasets are used to organize collections of RDF graphs, and comprise a default graph and zero or more named graphs. RDF 1.1 Concepts and Abstract Syntax also introduces key concepts and terminology, and discusses datatyping and the handling of fragment identifiers in IRIs within RDF graphs.</p>
 
@@ -205,7 +205,7 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 18 months</i></p>
             </dd>
 
-            <dt id="n-quads" class="spec">RDF <span class="issue">1.2</span> N-Quads</dt>
+            <dt id="n-quads" class="spec">RDF 1.2 N-Quads</dt>
             <dd>
               <p>This specification defines a line-based, plain text format for encoding an RDF dataset.</p>
 
@@ -215,7 +215,7 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 18 months</i></p>
             </dd>
 
-            <dt id="n-triples" class="spec">RDF <span class="issue">1.2</span> N-Triples</dt>
+            <dt id="n-triples" class="spec">RDF 1.2 N-Triples</dt>
             <dd>
               <p>This specification defines a line-based, plain text format for encoding an RDF graph.</p>
 
@@ -225,7 +225,7 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 18 months</i></p>
             </dd>
 
-            <dt id="rdf11-mt" class="spec">RDF <span class="issue">1.2</span> Semantics</dt>
+            <dt id="rdf11-mt" class="spec">RDF 1.2 Semantics</dt>
             <dd>
               <p>This specification defines a precise semantics for the Resource Description Framework and RDF Schema. It defines a number of distinct entailment regimes and corresponding patterns of entailment.</p>
 
@@ -235,7 +235,7 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 18 months</i></p>
             </dd>
 
-            <dt id="trig" class="spec">RDF <span class="issue">1.2</span> TriG</dt>
+            <dt id="trig" class="spec">RDF 1.2 TriG</dt>
             <dd>
               <p>This specification defines a textual syntax for RDF called TriG that allows an RDF dataset to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. TriG is an extension of the Turtle format.</p>
 
@@ -245,7 +245,7 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 18 months</i></p>
             </dd>
 
-            <dt id="turtle" class="spec">RDF <span class="issue">1.2</span> Turtle</dt>
+            <dt id="turtle" class="spec">RDF 1.2 Turtle</dt>
             <dd>
               <p>This specification defines a textual syntax for RDF called Turtle that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. Turtle provides levels of compatibility with the N-Triples format as well as the triple pattern syntax of the SPARQL W3C Recommendation.</p>
 
@@ -255,7 +255,7 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 18 months</i></p>
             </dd>
 
-            <dt id="rdf-syntax-grammar" class="spec">RDF <span class="issue">1.2</span> XML Syntax</dt>
+            <dt id="rdf-syntax-grammar" class="spec">RDF 1.2 XML Syntax</dt>
             <dd>
               <p>This specification defines an XML syntax for RDF called RDF/XML in terms of Namespaces in XML, the XML Information Set and XML Base.</p>
 
@@ -265,7 +265,7 @@
               <p>This Working Group will update this normative references and address the editorial errata in this document. It may revise its content in order to integrate RDF-star features, provided enough interest and manpower.</p>
             </dd>
 
-            <dt id="rdf-schema" class="spec">RDF Schema <span class="issue">1.2</span></dt>
+            <dt id="rdf-schema" class="spec">RDF Schema 1.2</dt>
             <dd>
               <p>This specification describes how to use RDF to describe RDF vocabularies. This specification defines a vocabulary for this purpose and defines other built-in RDF vocabulary initially specified in the RDF Model and Syntax Specification.</p>
 
@@ -279,7 +279,7 @@
           <section>
             <h4>SPARQL family of specifications</h4>
             <dl>
-<dt id="sparql11-overview" class="spec">SPARQL <span class="issue">1.2</span> Overview</dt>
+<dt id="sparql11-overview" class="spec">SPARQL 1.2 Overview</dt>
             <dd>
 	            <p>
                 This document is an overview of SPARQL 1.1. It provides an introduction
@@ -293,7 +293,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 24 months</i></p>
               </dd>
 
-            <dt id="sparql11-query" class="spec">SPARQL <span class="issue">1.2</span> Query Language</dt>
+            <dt id="sparql11-query" class="spec">SPARQL 1.2 Query Language</dt>
             <dd>
               <p>This specification defines the syntax and semantics of the SPARQL query language for RDF. SPARQL can be used to express queries across diverse data sources, whether the data is stored natively as RDF or viewed as RDF via middleware. SPARQL contains capabilities for querying required and optional graph patterns along with their conjunctions and disjunctions. SPARQL also supports aggregation, subqueries, negation, creating values by expressions, extensible value testing, and constraining queries by source RDF graph. The results of SPARQL queries can be result sets or RDF graphs.</p>
 
@@ -303,7 +303,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 18 months</i></p>
             </dd>
 
-            <dt id="sparql11-update" class="spec">SPARQL <span class="issue">1.2</span> Update</dt>
+            <dt id="sparql11-update" class="spec">SPARQL 1.2 Update</dt>
             <dd>
               <p>This specification defines an update language for RDF graphs. It uses a syntax derived from the SPARQL Query Language for RDF. Update operations are performed on a collection of graphs in a Graph Store. Operations are provided to update, create, and remove RDF graphs in a Graph Store.</p>
 
@@ -313,7 +313,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 24 months</i></p>
             </dd>
 
-            <dt id="sparql11-results-json" class="spec">SPARQL <span class="issue">1.2</span> Query Results JSON Format</dt>
+            <dt id="sparql11-results-json" class="spec">SPARQL 1.2 Query Results JSON Format</dt>
             <dd>
               <p>This specification defines a JSON format for the variable binding and boolean results formats provided by the SPARQL query language for RDF.</p>
 
@@ -323,7 +323,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 18 months</i></p>
             </dd>
 
-            <dt id="sparql11-results-xml" class="spec">SPARQL <span class="issue">1.2</span> Query Results XML Format</dt>
+            <dt id="sparql11-results-xml" class="spec">SPARQL 1.2 Query Results XML Format</dt>
             <dd>
               <p>This specification defines an XML format for the variable binding and boolean results formats provided by the SPARQL query language for RDF.</p>
 
@@ -340,7 +340,7 @@ Group.</p>
           </p>
 
           <dl>
-            <dt id="sparql11-service-description" class="spec">SPARQL <span class="issue">1.2</span> Service Description</dt>
+            <dt id="sparql11-service-description" class="spec">SPARQL 1.2 Service Description</dt>
             <dd>
               <p>This document describes SPARQL service description, a method for discovering, and vocabulary for describing SPARQL services made available via the SPARQL 1.1 Protocol for RDF.</p>
 
@@ -350,7 +350,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 24 months</i></p>
             </dd>
 
-            <dt id="sparql11-federated-query" class="spec">SPARQL <span class="issue">1.2</span> Federated Query</dt>
+            <dt id="sparql11-federated-query" class="spec">SPARQL 1.2 Federated Query</dt>
             <dd>
               <p>This specification defines the syntax and semantics of SPARQL 1.1 Federated Query for executing queries distributed over different SPARQL endpoints.</p>
 
@@ -360,7 +360,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 24 months</i></p>
             </dd>
 
-            <dt id="sparql11-entailment-regimes" class="spec">SPARQL <span class="issue">1.2</span> Entailment Regimes</dt>
+            <dt id="sparql11-entailment-regimes" class="spec">SPARQL 1.2 Entailment Regimes</dt>
             <dd>
               <p>There are different possible ways of defining a basic graph pattern matching extension for an entailment relation. This document specifies one such way for a range of standard semantic web entailment relations.</p>
 
@@ -370,7 +370,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 24 months</i></p>
             </dd>
 
-           <dt id="sparql-11-protocol" class="spec">SPARQL <span class="issue">1.2</span> Protocol</dt>
+           <dt id="sparql-11-protocol" class="spec">SPARQL 1.2 Protocol</dt>
             <dd>
               <p>This document specifies the SPARQL Protocol; it describes a means for conveying SPARQL queries and updates to a SPARQL processing service and returning the results via HTTP to the entity that requested them.</p>
               <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
@@ -379,7 +379,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 24 months</i></p>
             </dd>
 
-           <dt id="sparql11-graph-store-http-protocol" class="spec">SPARQL <span class="issue">1.2</span> Graph Store HTTP Protocol</dt>
+           <dt id="sparql11-graph-store-http-protocol" class="spec">SPARQL 1.2 Graph Store HTTP Protocol</dt>
             <dd>
               <p>This document describes the use of HTTP operations for the purpose of managing a collection of RDF graphs.</p>
 
@@ -389,7 +389,7 @@ Group.</p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">WG-START + 24 months</i></p>
             </dd>
 
-            <dt id="sparql11-results-csv-and-tsv" class="spec">SPARQL <span class="issue">1.2</span> Query Results CSV and TSV Format</dt>
+            <dt id="sparql11-results-csv-and-tsv" class="spec">SPARQL 1.2 Query Results CSV and TSV Format</dt>
             <dd>
               <p>The formats CSV [RFC4180] (comma separated values) and TSV [IANA-TSV] (tab separated values) provide simple, easy to process formats for the transmission of tabular data. They are supported as input datat formats to many tools, particularly spreadsheets. This document describes their use for expressing SPARQL query results from SELECT queries.</p>
 
