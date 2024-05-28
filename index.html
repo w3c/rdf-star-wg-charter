@@ -46,6 +46,16 @@
       footer {
         font-size: small;
       }
+
+      .note {
+        background: #e9fbe9;
+        color: black;
+        color: var(--note-text);
+        border: none;
+        border-left: thick solid #52e052;
+        padding: 1em;
+      }
+
     </style>
   </head>
   <body>
@@ -147,6 +157,7 @@
 
         <p>The group SHOULD ensure that any RDF 1.1 data remains valid in this new version. Furthermore, any RDF or RDFS entailment drawn under RDF 1.1 semantics SHOULD also remain valid in this new version.</p>
 
+        <p class="note">The name of this Working Group ("RDF-star") was chosen to emphasize the new feature that RDF 1.2 is providing compared to RDF 1.1. When the Working Group switches to maintenance mode, it might request to change its name to a more general designation (e.g. "RDF" or "RDF &amp; SPARQL") to be decided then.</p>
 
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
