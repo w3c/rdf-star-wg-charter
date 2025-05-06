@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>RDF-star Working Group Charter</title>
+    <title>RDF &amp; SPARQL Working Group Charter</title>
 
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
@@ -46,6 +46,20 @@
       footer {
         font-size: small;
       }
+
+      .note {
+        background: #e9fbe9;
+        color: black;
+        color: var(--note-text);
+        border: none;
+        border-left: thick solid #52e052;
+        padding: 1em;
+      }
+
+      dd > ul:last-child {
+        margin-bottom: 1em;
+      }
+
     </style>
   </head>
   <body>
@@ -71,12 +85,12 @@
 
 
     <main>
-      <h1 id="title">RDF-star Working Group Charter</h1>
+      <h1 id="title">RDF &amp; SPARQL Working Group Charter</h1>
 
-      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/rdf-star">RDF-star Working Group</a> is to extend a set of RDF and SPARQL related recommendations, with the ability to concisely represent and query statements about statements.</p>
+      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/rdf-star">RDF &amp; SPARQL Working Group</a> is to update and maintain the set of RDF and SPARQL related recommendations, extending them with the ability to concisely represent and query statements about statements.</p>
 
       <div class="noprint">
-        <p class="join"><a href="https://www.w3.org/groups/wg/rdf-star/join">Join the RDF-star Working Group.</a></p>
+        <p class="join"><a href="https://www.w3.org/groups/wg/rdf-star/join">Join the RDF &amp; SPARQL Working Group.</a></p>
       </div>
 
       <!--
@@ -94,7 +108,7 @@
               Start date
             </th>
             <td>
-              29 August 2022
+              1 May 2025
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -102,7 +116,7 @@
               End date
             </th>
             <td>
-              30 April 2025
+              30 April 2027
             </td>
           </tr>
           <tr>
@@ -110,7 +124,7 @@
               Chairs
             </th>
             <td>
-              <a href="mailto:ktk@netlabs.org">Adrian Gschwend</a> (<a href="https://zazuko.com/">Zazuko</a>), <a href="mailto:ora@amazon.com">Ora Lassila</a>(<a href="https://www.amazon.com">Amazon</a>)
+              <a href="mailto:ktk@netlabs.org">Adrian Gschwend</a> (<a href="https://zazuko.com/">Zazuko</a>), <a href="mailto:ora@amazon.com">Ora Lassila</a> (<a href="https://www.amazon.com">Amazon</a>)
             </td>
           </tr>
           <tr>
@@ -118,7 +132,7 @@
               Team Contacts
             </th>
             <td>
-              <span><a href="mailto:pierre-antoine@w3.org">Pierre-Antoine Champin</a></span> (0.15 <abbr title="Full-Time Equivalent">FTE</abbr>)
+              <span><a href="mailto:pierre-antoine@w3.org">Pierre-Antoine Champin</a></span> (0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)
             </td>
           </tr>
           <tr>
@@ -134,18 +148,20 @@
         </table>
       </div>
 
-      <section id="background" class="background">
+      <div id="background" class="background">
         <p>RDF-star (formerly spelled RDF*) is an extension of RDF that was <a href="https://arxiv.org/abs/1406.3399">initially proposed in 2014</a> by Olaf Hartig and Bryan Thompson, providing a concise way to make statements about statements. It has become quite popular, especially as a means to provide interoperability between RDF and Property Graphs, and has already been implemented to various extents by <a href="https://w3c.github.io/rdf-star/implementations.html">a number of vendors and open-source libraries</a>. A <a href="https://w3c.github.io/rdf-star/">subgroup</a> of the <a href="https://www.w3.org/community/rdf-dev/">RDF-DEV Community Group</a> then formed to gather feedback, <a href="https://w3c.github.io/rdf-star/UCR/rdf-star-ucr.html">use-cases</a>, and explore the possibility of <a href="https://www.w3.org/2021/12/rdf-star.html">integrating RDF-star</a> into the existing RDF standards.</p>
-      </section>
+      </div>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p>The scope of this Working Group is to extend the recommendations defining RDF 1.1 and SPARQL 1.1 with the features introduced by RDF-star. More precisely, RDF-star introduces the notion of <em>quoted triple</em> to express statements about statements. The abstract and concrete syntaxes of RDF and SPARQL are extended to support this new feature, as well as their respective semantics.</p>
+        <p>The scope of this Working Group is to update the recommendations defining RDF 1.1 and SPARQL 1.1, extending them with the features introduced by RDF-star. More precisely, RDF-star introduces the notion of <em>quoted triple</em> to express statements about statements. The abstract and concrete syntaxes of RDF and SPARQL, as well as their respective semantics, are to be extended to support this new feature.
+        The group will then maintain the set of resulting recommendations (RDF 1.2 and SPARQL 1.2).</p>
 
-        <p>The community group has identified, in its <a href="https://www.w3.org/2021/12/rdf-star.html">final report</a>, which recommendations should be updated, and a possible path for updating them. The Working Group may however reconsider this and proceed differently from the Community Group's proposal. For every recommendation updated by this Working Group, the pending editorial errata will also be addressed. The Working Group will also consider <a href="https://www.w3.org/2021/Process-20211102/#allow-new-features">allowing new features</a> in these recommendations, according to <a href="https://www.w3.org/2021/Process-20211102/#revised-rec-features">Section 6.3.11.4 of the W3C process</a>, in order to render future evolutions easier.</p>
+        <p>The community group has identified, in its <a href="https://www.w3.org/2021/12/rdf-star.html">final report</a>, which recommendations should be updated, and a possible path for updating them. The Working Group may however reconsider this and proceed differently from the Community Group's proposal. For every recommendation updated by this Working Group, pending <a href="https://www.w3.org/policies/process/20231103/#errata">errata</a> will also be addressed. The Working Group will also consider <a href="https://www.w3.org/policies/process/#allow-new-features">allowing new features</a> in these recommendations, according to <a href="https://www.w3.org/policies/process/#revised-rec-features">Section 6.3.11.4 of the W3C process</a>, to ease and speed up future evolution.</p>
 
         <p>The group SHOULD ensure that any RDF 1.1 data remains valid in this new version. Furthermore, any RDF or RDFS entailment drawn under RDF 1.1 semantics SHOULD also remain valid in this new version.</p>
 
+        <p class="note">This Working Group was formally named "RDF-star" to emphasize the new features that RDF 1.2 is providing compared to RDF 1.1. This caused some confusion with respect to the actual scope of the group, so it was decided to change it to a more general designation.</p>
 
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
@@ -165,7 +181,8 @@
 
         <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/rdf-star/publications">group publication status page</a>.</p>
 
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Reference</i> is to a (draft) specification used as an additional input to the work. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval.
+          <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
         <section id="normative">
           <h3>
@@ -183,80 +200,104 @@
             <dd>
               <p>This specification defines an abstract syntax (a data model) which serves to link all RDF-based languages and specifications. The abstract syntax has two key data structures: RDF graphs are sets of subject-predicate-object triples, where the elements may be IRIs, blank nodes, or datatyped literals. They are used to express descriptions of resources. RDF datasets are used to organize collections of RDF graphs, and comprise a default graph and zero or more named graphs. RDF 1.1 Concepts and Abstract Syntax also introduces key concepts and terminology, and discusses datatyping and the handling of fragment identifiers in IRIs within RDF graphs.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">RDF 1.1 Concepts and Abstract Syntax</a>, eds. Richard Cyganiak, David Wood, Markus Lanthaler, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#concepts">Section 2 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-rdf12-concepts-20250327/">https://www.w3.org/TR/2025/WD-rdf12-concepts-20250327/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-rdf12-concepts-20230516/">https://www.w3.org/TR/2023/WD-rdf12-concepts-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="n-quads" class="spec">RDF 1.2 N-Quads</dt>
             <dd>
               <p>This specification defines a line-based, plain text format for encoding an RDF dataset.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-n-quads-20140225/">RDF 1.1 N-Quads</a>, ed. Gavin Carothers, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#n-quads-star">Section 3.5 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-rdf12-n-quads-20250220/">https://www.w3.org/TR/2025/WD-rdf12-n-quads-20250220/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-rdf12-n-quads-20230516/">https://www.w3.org/TR/2023/WD-rdf12-n-quads-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="n-triples" class="spec">RDF 1.2 N-Triples</dt>
             <dd>
               <p>This specification defines a line-based, plain text format for encoding an RDF graph.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-n-triples-20140225/">RDF 1.1 N-Triples</a>, eds. Gavin Carothers, Andy Seaborne, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#n-triples-star">Section 3.4 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-rdf12-n-triples-20241219/">https://www.w3.org/TR/2024/WD-rdf12-n-triples-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-rdf12-n-triples-20230516/">https://www.w3.org/TR/2023/WD-rdf12-n-triples-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="rdf11-mt" class="spec">RDF 1.2 Semantics</dt>
             <dd>
               <p>This specification defines a precise semantics for the Resource Description Framework and RDF Schema. It defines a number of distinct entailment regimes and corresponding patterns of entailment.</p>
-
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-rdf11-mt-20140225/">RDF 1.1 Semantics</a>, eds. Patrick J. Hayes, Peter F. Patel-Schneider, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#rdf-star-semantics">Section 6 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-rdf12-semantics-20250403/">https://www.w3.org/TR/2025/WD-rdf12-semantics-20250403/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-rdf12-semantics-20230606/">https://www.w3.org/TR/2023/WD-rdf12-semantics-20230606/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="trig" class="spec">RDF 1.2 TriG</dt>
             <dd>
               <p>This specification defines a textual syntax for RDF called TriG that allows an RDF dataset to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. TriG is an extension of the Turtle format.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-trig-20140225/">RDF 1.1 TriG</a>, eds. Gavin Carothers, Andy Seaborne, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#trig-star">Section 3.3 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-rdf12-trig-20241219/">https://www.w3.org/TR/2024/WD-rdf12-trig-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-rdf12-trig-20230516/">https://www.w3.org/TR/2023/WD-rdf12-trig-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="turtle" class="spec">RDF 1.2 Turtle</dt>
             <dd>
               <p>This specification defines a textual syntax for RDF called Turtle that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. Turtle provides levels of compatibility with the N-Triples format as well as the triple pattern syntax of the SPARQL W3C Recommendation.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-turtle-20140225/">RDF 1.1 Turtle</a>, eds. Eric Prud'hommeaux, Gavin Carothers, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#turtle-star">Section 3.2 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-rdf12-turtle-20250220/">https://www.w3.org/TR/2025/WD-rdf12-turtle-20250220/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-rdf12-turtle-20230516/">https://www.w3.org/TR/2023/WD-rdf12-turtle-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="rdf-syntax-grammar" class="spec">RDF 1.2 XML Syntax</dt>
             <dd>
               <p>This specification defines an XML syntax for RDF called RDF/XML in terms of Namespaces in XML, the XML Information Set and XML Base.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-rdf-syntax-grammar-20140225/">RDF 1.1 XML Syntax</a>, eds. Fabien Gandon, Guus Schreiber, W3C Recommendation.</p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
-              <p>This Working Group will update this normative references and address the editorial errata in this document. It may revise its content in order to integrate RDF-star features, provided enough interest and manpower.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-rdf12-xml-20250227/">https://www.w3.org/TR/2025/WD-rdf12-xml-20250227/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-rdf12-xml-20230516/">https://www.w3.org/TR/2023/WD-rdf12-xml-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
+              <p>This Working Group will update this normative references and address the errata in this document. Its content may also be revised to integrate RDF-star features, provided enough interest and manpower are available./p>
             </dd>
 
             <dt id="rdf-schema" class="spec">RDF Schema 1.2</dt>
             <dd>
               <p>This specification describes how to use RDF to describe RDF vocabularies. This specification defines a vocabulary for this purpose and defines other built-in RDF vocabulary initially specified in the RDF Model and Syntax Specification.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2011/rdf-wg/wiki/Main_Page">RDF WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2014/REC-rdf-schema-20140225/">RDF Schema 1.1</a>, eds. Dan Brickley, R.V. Guha, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#rdf-star-vocabulary">Section 7 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-rdf12-schema-20250224/">https://www.w3.org/TR/2025/WD-rdf12-schema-20250224/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-rdf12-schema-20230516/">https://www.w3.org/TR/2023/WD-rdf12-schema-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
             </dl>
           </section>
@@ -270,51 +311,61 @@
                 to a set of W3C specifications that facilitate querying and manipulating
                 RDF graph content on the Web or in an RDF store.
               </p>
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/">SPARQL 1.1 Overview</a>, ed. The W3C SPARQL Working
-Group.</p>
-              <p class="draft-status"><b>Reference:</b> none</p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+              <p class="draft-status"><b>Draft state:</b> No Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <p><b>Input Documentt:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/">SPARQL 1.1 Overview</a>, ed. The W3C SPARQL Working Group, W3C Recommendation.</p>
               </dd>
 
             <dt id="sparql11-query" class="spec">SPARQL 1.2 Query Language</dt>
             <dd>
               <p>This specification defines the syntax and semantics of the SPARQL query language for RDF. SPARQL can be used to express queries across diverse data sources, whether the data is stored natively as RDF or viewed as RDF via middleware. SPARQL contains capabilities for querying required and optional graph patterns along with their conjunctions and disjunctions. SPARQL also supports aggregation, subqueries, negation, creating values by expressions, extensible value testing, and constraining queries by source RDF graph. The results of SPARQL queries can be result sets or RDF graphs.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-query-20130321/">SPARQL 1.1 Query Language</a>, eds. Steve Harris, Andy Seaborne, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#sparql-star">Section 4 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-sparql12-query-20250404/">https://www.w3.org/TR/2025/WD-sparql12-query-20250404/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-query-20230516/">https://www.w3.org/TR/2023/WD-sparql12-query-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="sparql11-update" class="spec">SPARQL 1.2 Update</dt>
             <dd>
               <p>This specification defines an update language for RDF graphs. It uses a syntax derived from the SPARQL Query Language for RDF. Update operations are performed on a collection of graphs in a Graph Store. Operations are provided to update, create, and remove RDF graphs in a Graph Store.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-update-20130321/">SPARQL 1.1 Update</a>, eds. Paula Gearon, Alexandre Passant, Axel Polleres, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#sparql-star-update">Section 5 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-sparql12-update-20250206/">https://www.w3.org/TR/2025/WD-sparql12-update-20250206/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-update-20230516/">https://www.w3.org/TR/2023/WD-sparql12-update-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="sparql11-results-json" class="spec">SPARQL 1.2 Query Results JSON Format</dt>
             <dd>
               <p>This specification defines a JSON format for the variable binding and boolean results formats provided by the SPARQL query language for RDF.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-results-json-20130321/">SPARQL 1.1 Query Results JSON Format</a>, ed. Andy Seaborne, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#sparql-star-query-results-json-format">Section 4.7.1 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 29 February 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-sparql12-results-json-20241219/">https://www.w3.org/TR/2024/WD-sparql12-results-json-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-results-json-20230516/">https://www.w3.org/TR/2023/WD-sparql12-results-json-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="sparql11-results-xml" class="spec">SPARQL 1.2 Query Results XML Format</dt>
             <dd>
               <p>This specification defines an XML format for the variable binding and boolean results formats provided by the SPARQL query language for RDF.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-rdf-sparql-XMLres-20130321/">SPARQL Query Results XML Format (Second Edition)</a>, ed. Sandro Hawke, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> <a href="https://www.w3.org/2021/12/rdf-star.html#sparql-star-query-results-xml-format">Section 4.7.2 of RDF-star and SPARQL-star</a>, eds. Olaf Hartig, Pierre-Antoine Champin, Gregg Kellogg, Andy Seaborne, W3C Community Group Final Report, 2021. </p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-sparql12-results-xml-20241227/">https://www.w3.org/TR/2024/WD-sparql12-results-xml-20241227/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-results-xml-20230516/">https://www.w3.org/TR/2023/WD-sparql12-results-xml-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
           </dl>
 
@@ -328,59 +379,78 @@ Group.</p>
             <dd>
               <p>This document describes SPARQL service description, a method for discovering, and vocabulary for describing SPARQL services made available via the SPARQL 1.1 Protocol for RDF.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-service-description-20130321/">SPARQL 1.1  Service Description</a>, ed. Gregory Todd Williams, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> none</p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-sparql12-service-description-20241219/">https://www.w3.org/TR/2024/WD-sparql12-service-description-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-service-description-20230516/">https://www.w3.org/TR/2023/WD-sparql12-service-description-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="sparql11-federated-query" class="spec">SPARQL 1.2 Federated Query</dt>
             <dd>
               <p>This specification defines the syntax and semantics of SPARQL 1.1 Federated Query for executing queries distributed over different SPARQL endpoints.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-federated-query-20130321/">SPARQL 1.1 Federated Query</a>, eds. Eric Prud'hommeaux, Carlos Buil-Aranda, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> none</p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-sparql12-federated-query-20241219/">https://www.w3.org/TR/2024/WD-sparql12-federated-query-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-federated-query-20230516/">https://www.w3.org/TR/2023/WD-sparql12-federated-query-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="sparql11-entailment-regimes" class="spec">SPARQL 1.2 Entailment Regimes</dt>
             <dd>
               <p>There are different possible ways of defining a basic graph pattern matching extension for an entailment relation. This document specifies one such way for a range of standard semantic web entailment relations.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-entailment-20130321/">SPARQL 1.1 Entailment Regimes</a>, eds. Birte Glimm, Chimezie Ogbuji, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> none</p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-sparql12-entailment-20241219/">https://www.w3.org/TR/2024/WD-sparql12-entailment-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-entailment-20230606/">https://www.w3.org/TR/2023/WD-sparql12-entailment-20230606/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
            <dt id="sparql-11-protocol" class="spec">SPARQL 1.2 Protocol</dt>
             <dd>
               <p>This document specifies the SPARQL Protocol; it describes a means for conveying SPARQL queries and updates to a SPARQL processing service and returning the results via HTTP to the entity that requested them.</p>
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/">SPARQL 1.1 Protocol</a>, eds.  Lee Feigenbaum, Gregory Todd Williams, Kendall Grant Clark (1st edition), Elias Torres (1str edition), W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> none</p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-sparql12-protocol-20241219/">https://www.w3.org/TR/2024/WD-sparql12-protocol-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-protocol-20230516/">https://www.w3.org/TR/2023/WD-sparql12-protocol-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
            <dt id="sparql11-graph-store-http-protocol" class="spec">SPARQL 1.2 Graph Store HTTP Protocol</dt>
             <dd>
               <p>This document describes the use of HTTP operations for the purpose of managing a collection of RDF graphs.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321/">SPARQL 1.1  Graph Store HTTP Protocol</a>, ed. Chimezie Ogbuji, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> none</p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-sparql12-graph-store-protocol-20241219/">https://www.w3.org/TR/2024/WD-sparql12-graph-store-protocol-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-graph-store-protocol-20230516/">https://www.w3.org/TR/2023/WD-sparql12-graph-store-protocol-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
 
             <dt id="sparql11-results-csv-and-tsv" class="spec">SPARQL 1.2 Query Results CSV and TSV Format</dt>
             <dd>
               <p>The formats CSV [RFC4180] (comma separated values) and TSV [IANA-TSV] (tab separated values) provide simple, easy to process formats for the transmission of tabular data. They are supported as input datat formats to many tools, particularly spreadsheets. This document describes their use for expressing SPARQL query results from SELECT queries.</p>
 
-              <p class="draft-status"><b>Draft state:</b> Adopted from the <a href="https://www.w3.org/2009/sparql/wiki/Main_Page">SPARQL (1.1) WG</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/REC-sparql11-results-csv-tsv-20130321/">SPARQL 1.1 Query Results CSV and TSV Formats</a>, ed. Andy Seaborne, W3C Recommendation.</p>
-              <p class="draft-status"><b>Reference:</b> none</p>
-              <p class="milestone"><b>Expected completion:</b> 28 August 2024</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <ul>
+                <li><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-sparql12-results-csv-tsv-20241219/">https://www.w3.org/TR/2024/WD-sparql12-results-csv-tsv-20241219/</a>
+                <li><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-sparql12-results-csv-tsv-20230516/">https://www.w3.org/TR/2023/WD-sparql12-results-csv-tsv-20230516/</a>
+                <li><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/08/rdf-star-wg-charter/">https://www.w3.org/2022/08/rdf-star-wg-charter/</a>
+              </ul>
             </dd>
           </dl>
 
@@ -400,11 +470,11 @@ Group.</p>
             <li>Test suite and implementation report for the specification;</li>
             <li>Primer or Best Practice documents to support web developers when designing applications, 
                 including an update of the <a href="https://www.w3.org/TR/rdf11-primer/">RDF 1.1 Primer</a></li>
-            <li>Guidelines about how and which <a href="https://www.w3.org/2021/Process-20211102/#allow-new-features">new features</a> may be further added to the recommendations.</li>
+            <li>Guidelines about how and which <a href="https://www.w3.org/policies/process/#allow-new-features">new features</a> may be further added to the recommendations.</li>
           </ul>
 
           <p>
-            Other normative deliverables, or non-editorial errata to the deliverable above, might be considered by the Working Group during its lifetime.
+            Other normative deliverables might be considered by the Working Group during its lifetime.
             For example, community efforts to integrate RDF-star into other RDF-related specifications might reach a maturity level justifying their adoption by this Working Group. Should this happen, a rechartering will be requested, involving a new review by the Advisory Committee.
           </p>
         </section>
@@ -412,19 +482,18 @@ Group.</p>
         <section id="timeline">
           <h3>Timeline</h3>
             <ul>
-              <li>September 2022: First teleconference</li>
-              <li>Q1 2023: FPWD of all deliverables</li>
-              <li>Q4 2023: Candidate Recommendation of RDF deliverables</li>
-              <li>Q1 2024: Recommendation of RDF deliverables</li>
-              <li>Q2 2024: Candidate Recommendation of SPARQL deliverables</li>
-              <li>Q3 2024: Recommendation of SPARQL deliverables</li>
+              <li>Q2 2025: Candidate Recommendation of RDF 1.2 deliverables</li>
+              <li>Q3 2025: Candidate Recommendation of SPARQL 1.2 deliverables</li>
+              <li>Q3 2025: Recommendation of RDF 1.2 deliverables</li>
+              <li>Q4 2025: Recommendation of SPARQL 1.2 deliverables</li>
+              <li>Afterwards: Maintenance of RDF 1.2 and SPARQL 1.2 recommendations</li>
             </ul>
         </section>
       </section>
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
-	  <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.</p>
+	  <p>In order to advance to <a href="https://www.w3.org/policies/process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/policies/process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.</p>
 	  <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
 	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
 	  <p>To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
@@ -433,25 +502,28 @@ Group.</p>
       <section id="coordination">
         <h2>Coordination</h2>
         <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
-          accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          accessibility, internationalization, privacy, and security with the relevant Working and
           Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
           Invitation for review must be issued during each major standards-track document transition, including
-          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          <a href="https://www.w3.org/policies/process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
           Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
           each specification.  The Working Group is advised to seek a review at least 3 months before first entering
-          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
           to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
 
-        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a>:</p>
 
         <section>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
             <dt><a href="https://www.w3.org/2017/dxwg/wiki/Main_Page">Data Exchange Working Group</a> (DXWG)</dt>
-            <dd>The work of the DXWG on Content Negociation by Profile has been identified as a way to improve interoperability between RDF-star-aware applications and legacy application that do not support its new features.</dd>
+            <dd>The work of the DXWG on Content Negotiation by Profile has been identified as a way to improve interoperability between RDF 1.2 applications and legacy application that do not support its new features.</dd>
+
+            <dt><a href="https://www.w3.org/groups/wg/data-shapes/">Data Shapes Working Group</a></dt>
+            <dd>One of the primary goals of the Working Group is to provide SHACL handling of the new features introduced in RDF 1.2 (from RDF-star)</dd>
 
             <dt><a href="https://www.w3.org/2018/json-ld-wg/">JSON-LD Working Group</a></dt>
-            <dd>As a concrete syntax for RDF datasets, JSON-LD may also be updated to support RDF-star. <a href="https://json-ld.github.io/json-ld-star/">A proposal</a> from the JSON-LD Community Group is already available.</dd>
+            <dd>As a concrete syntax for RDF datasets, JSON-LD may also be updated to support RDF 1.2. <a href="https://json-ld.github.io/json-ld-star/">A proposal</a> from the JSON-LD Community Group based on RDF-star is already available.</dd>
 
             <dt><a href="https://www.w3.org/community/rdf-dev/">RDF-DEV Community Group</a></dt>
             <dd>To synchronize with other incubation and standardization work related to RDF, for example <a href="https://w3c.github.io/rch-wg-charter/">canonicalization and hashing</a>.</dd>
@@ -465,11 +537,11 @@ Group.</p>
         <section>
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
-            <dt><a href="https://ldbcouncil.org/gql-community/pgswg/">Property Graph Schema Working Group (PGSWG)</a></dt>
+            <dt><a href="https://ldbcouncil.org/gql-community/lex/">LDBC Extended GQL Schema (LEX) Working Group</a></dt>
             <dd>To coordinate on possible bridges between RDF(-star) graphs and the unified model for Property Graphs proposed by this group.</dd>
 
             <dt><a href="https://www.iso.org/committee/45342.html">ISO/IEC JTC 1/SC 32</a> Data management and interchange</dt>
-            <dd>Through the <a href="https://www.w3.org/2001/11/StdLiaison#ISO">existing liaison with W3C</a>, to coordinate with the efforts around graph query languages
+            <dd>Through the <a href="https://www.w3.org/liaisons/#ISO">existing liaison with W3C</a>, to coordinate with the efforts around graph query languages
               (<a href="https://www.iso.org/standard/76120.html">GQL</a> and <a href="https://www.iso.org/standard/79473.html">SQL/PGQ</a>).</dd>
           </dl>
         </section>
@@ -488,10 +560,10 @@ Group.</p>
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
         </p>
         <p>
-          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
         </p>
-        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
-          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
       </section>
 
 
@@ -501,14 +573,14 @@ Group.</p>
           Communication
         </h2>
         <p id="public">
-          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/policies/process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="">RDF-star Working Group home page.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="">RDF &amp; SPARQL Working Group home page.</a>
         </p>
         <p>
-          Most RDF-star Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+          Most RDF &amp; SPARQL Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
           This group primarily conducts its technical work on <a id="public-github" href="https://github.com/w3c/rdf-star-wg/">GitHub issues</a> or on the public mailing list <a id="public-name" href="mailto:public-rdf-star-wg@w3.org">public-rdf-star@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-rdf-star-wg/">archive</a>).
@@ -526,7 +598,7 @@ Group.</p>
           Decision Policy
         </h2>
         <p>
-          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/policies/process/#Consensus"> W3C Process Document (section 5.2.1, Consensus)</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
         <p>
            However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
         </p>
@@ -538,10 +610,10 @@ Group.</p>
           If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
         <p>
-          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs.
         </p>
         <p>
-          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+          This charter is written in accordance with the <a href="https://www.w3.org/policies/process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
         </p>
       </section>
 
@@ -552,9 +624,9 @@ Group.</p>
           Patent Policy
         </h2>
         <p>
-          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+          This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/rdf-star/ipr/">licensing information</a>.
         </p>
       </section>
 
@@ -562,7 +634,7 @@ Group.</p>
 
       <section id="licensing">
         <h2>Licensing</h2>
-        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/copyright/software-license/">W3C Software and Document license</a> for all its deliverables.</p>
       </section>
 
 
@@ -572,7 +644,7 @@ Group.</p>
           About this Charter
         </h2>
         <p>
-          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#WG-and-IG">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/policies/process/#WG-and-IG">section 3.4</a> of the <a href="https://www.w3.org/policies/process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
 
         <section id="history">
@@ -580,7 +652,7 @@ Group.</p>
             Charter History
           </h3>
 
-          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
           <table class="history">
             <tbody>
@@ -631,7 +703,7 @@ Group.</p>
                   <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2024OctDec/0070.html">Charter Extension</a>
                 </th>
                 <td>
-                  29 August 2024
+                  29 November 2024
                 </td>
                 <td>
                   28 February 2025
@@ -654,8 +726,35 @@ Group.</p>
                  Current charter extended, pending decision of the W3C council regarding the proposed recharter.
                 </td>
               </tr>
-
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2025AprJun/0025.html">Rechartered</a>
+                </th>
+                <td>
+                  01 May 2025
+                </td>
+                <td>
+                  30 April 2027
+                </td>
+                <td>
+                  Rechartered for two more years, to 1) complete the work on RDF 1.2 and SPARQL 1.2 deliverables, and 2) switch to maintenance mode thereafter.
+                </td>
+              </tr>
               <!--
+              <tr>
+                <th>
+                  <a class="todo" href="">Charter Extension</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
               <tr>
                 <th>
                   <a class="todo" href="">Rechartered</a>
@@ -700,21 +799,15 @@ Group.</p>
         <a href="mailto:pierre-antoine@w3.org">Pierre-Antoine Champin</a>
       </address>
 
-      <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
-        2022
-        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
-        (
-        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
-        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
-        <a href="https://www.keio.ac.jp/">Keio</a>,
-        <a href="https://ev.buaa.edu.cn/">Beihang</a>
-        ), All Rights Reserved.
-
-        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
-      </p>
+      <p class="copyright">Copyright © 2025 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+        <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+        <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
+        <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
+            <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
       <hr>
-      <p><a href="https://github.com/w3c/rdf-star-wg-charter">Yes, it's on GitHub!</a>.</p>
+      <!--
+      <p class=todo><a href="https://github.com/w3c/rdf-star-wg-charter">Yes, it's on GitHub!</a>.</p>
+      -->
     </footer>
 
   </body>
